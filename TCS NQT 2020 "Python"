@@ -1,4 +1,14 @@
+/******************************************************************************
 
+question: man standing at the origin 
+moves 10m right
+20m upwards
+30m left
+40m down
+50m left
+and continue as forth find the coordinates while entering a no. and find the value
+
+*******************************************************************************/
 
 print ('Hello World')
 print ("\n")
