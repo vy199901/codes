@@ -1,0 +1,50 @@
+/******************************************************************************
+
+question: man standing at the origin 
+moves 10m right
+20m upwards
+30m left
+40m down
+50m left
+and continue as forth find the coordinates while entering a no. and find the value
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World\n");
+    
+    int n,i;
+    int x=0,y=0;
+    
+    printf("enter a no.");
+    scanf("%d",&n);
+    
+    int no = n*10;
+    
+    for (i=1;i<=n;i++)
+    {
+        if(i%4 == 1)
+        {
+            x = x + i*10;
+        }
+        if(i%4 == 2)
+        {
+            y = y + i*10;
+        }
+        if(i%4 == 3)
+        {
+            x = x - i*10;
+        }
+        if(i%4 == 0)
+        {
+            y = y - i*10;
+        }
+    }
+    
+    printf("the value of x is :%d \n",x);
+    printf("the value of y is :%d \n",y);
+
+    return 0;
+}
