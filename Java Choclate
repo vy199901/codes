@@ -1,0 +1,22 @@
+
+// Qn. Find the no. of chocolate from given amt.
+// if rs1 getting 1 choclate and 
+// exchange of 3 wrapper of chocolate getting 1 chocolate 
+// then find the total no. chocolate
+
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    
+		System.out.println("Hello World");
+		System.out.println("Enter amount");
+		int no = sc.nextInt();
+		
+		int f = no + no/3 ;
+		System.out.println(""+f);
+	}
+}
