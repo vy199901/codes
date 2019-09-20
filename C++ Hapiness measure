@@ -1,0 +1,35 @@
+// Qn2 marriage stone age
+// Husband and wife living together,
+// husband everyday going to catch the fish, 
+// wife is happy and sad depend on the max and min of catching the fish. 
+// If husband is catching fish more than previous day then she is happy 
+// but if husband catches less  fish then she is sad. 
+// Find the "overall" happiness of wife
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World\n");
+    int n;
+    int day=1;
+    int a[30];
+    a[0] = 0;
+    do{
+        printf("Enter no. of fish catched today\n");
+        scanf("%d",&n);
+        a[day] = n;
+
+        if(a[day] >= a[day-1])
+            printf("wife Happy\n");
+        else
+            printf("wife sad\n");
+        
+        ++day;
+
+        
+    }while(n != 0);
+
+    return 0;
+}
