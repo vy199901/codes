@@ -1,5 +1,3 @@
-package uniqueDigitsOfLargeNumber;
-
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
